@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e69f807574.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="fedi">
+        <nav class="navbar bg-gray-700">
+            <div class="container-fluid">
+              <a class="navbar-brand">Fedi's store</a>
+              <img class="img" src="5824459.png" alt="">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <Main class="bg-gray-500 m-10">
+                <div class="flex justify-around text-center text-5xl bg-gray-400">
+                    <h1 class="" >Price : </h1>
+                    <span id="totalPrice" >0</span>
+                </div>
+        <br>
+        <div class="flex justify-around" >
+            <div class="card" style="width: 18rem;">
+                <img src="ak47.jpg" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title text-center">Ak 47</h5>
+                  <p class=" price text-center">100</p>
+                    <div class="flex justify-around">
+
+                        <button class="btnMoins">-</button>
+                        <span class="quantity">0</span>
+                        <button class="btnPlus">+</button> 
+                    </div>
+                    <br>
+                    <div class=" flex justify-around">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                  <br>
+                  <a href="#" class="btn btn-primary flex justify-center ">buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="m4a1.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">m4a1</h5>
+                  <p class=" price text-center">200</p>
+                    <div class="flex justify-around">
+                        <button class="btnMoins">-</button>
+                        <span class="quantity">0</span>
+                        <button class="btnPlus">+</button>   
+                    </div>
+                  <br>
+                  <div class=" flex justify-around">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+
+                    </div>
+                <br>
+                  <a href="#" class="btn btn-primary flex justify-center">buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="950509_001_1_1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">deagle</h5>
+                  <p class="price text-center">50</p>
+                    <div class="flex justify-around">
+                        <button class="btnMoins">-</button>
+                        <span class="quantity">0</span>
+                        <button class="btnPlus">+</button> 
+                    </div>
+                  <br> 
+                     <div class=" flex justify-around">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                      
+                     </div>
+                <br>                
+                  <a href="#" class="btn btn-primary flex justify-center">buy</a>
+                </div>
+              </div>
+             <div class="card" style="width: 18rem;">
+                <img src="360_F_239705526_s9dmVdfHFqlIzkurPDiFGlR8QKaeFYqy.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Bazooka</h5>
+                  <p class=" price text-center">500</p>
+                    <div class="flex justify-around">
+                        <button class="btnMoins">-</button>
+                        <span class="quantity" >0</span>
+                        <button class="btnPlus">+</button>
+                    </div>
+                    <br>
+                    <div class=" flex justify-around">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                          
+                         </div>
+                  <br>
+                  <a href="#" class="btn btn-primary flex justify-center">buy</a>
+                </div>
+              </div>
+        </div>
+    </Main>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <h3 class="text-xl font-bold mb-4">Contact</h3>
+                <p>1234 Gunshop Street</p>
+                <p>aouina city</p>
+                <p>Phone: +21690535022</p>
+                <p>Email: fedi.bey1@gmail.com</p>
+            </div>
+    
+           
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+
+            <div class="w-full md:w-1/3">
+                <h3 class="text-xl font-bold mb-4">Legal</h3>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Shipping & Returns</p>
+                <p>© 2024 Gunstore. All rights reserved.</p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 3.21 8.09 7.43 8.82.55.1.75-.24.75-.53 0-.26-.01-.94-.01-1.84-3.06.59-3.71-1.48-3.71-1.48-.5-1.27-1.22-1.61-1.22-1.61-1-.68.08-.67.08-.67 1.11.08 1.69 1.14 1.69 1.14.98 1.68 2.57 1.19 3.19.91.1-.71.38-1.19.69-1.46-2.42-.27-4.96-1.21-4.96-5.39 0-1.19.42-2.17 1.11-2.94-.11-.28-.48-1.39.11-2.9 0 0 .92-.29 3.02 1.12.88-.24 1.83-.36 2.77-.36s1.89.12 2.77.36c2.1-1.41 3.02-1.12 3.02-1.12.59 1.51.22 2.62.11 2.9.69.77 1.11 1.75 1.11 2.94 0 4.19-2.55 5.12-4.98 5.39.39.34.74 1.01.74 2.03 0 1.46-.01 2.64-.01 3 .01.29.2.64.76.53C18.79 20.08 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 2h-19C1.122 2 0 3.122 0 4.5v15C0 20.878 1.122 22 2.5 22h19c1.378 0 2.5-1.122 2.5-2.5v-15C24 3.122 22.878 2 21.5 2zm-1.625 7.445c-.37 0-.67.3-.67.67 0 .37.3.67.67.67.368 0 .67-.3.67-.67 0-.37-.302-.67-.67-.67zm-2.303 5.71c-.053.647-.63 1.145-1.29 1.145h-10.27c-.66 0-1.238-.498-1.29-1.145l-.427-5.498h13.05l-.423 5.498zm3.103-6.567c0 .736-.597 1.333-1.333 1.333h-.833c-.736 0-1.333-.597-1.333-1.333v-.834c0-.736.597-1.333 1.333-1.333h.833c.736 0 1.333.597 1.333 1.333v.834zm-7.5-1.333h-2v2h2v-2zm-3 0h-2v2h2v-2zm3 3h-8v-1h8v1z"/></svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.475 2 2 6.475 2 12s4.475 10 10 10 10-4.475 10-10S17.525 2 12 2zm3.5 15h-7v-1.5h1.675s-.175-.238-.325-.45c-.15-.213-.35-.512-.35-1.025s0-1.188 0-1.188s.012-1.025-.125-1.625c-.137-.6-.65-1.425-1.85-1.425-1.725 0-2.912 1.275-2.912 3.45s1.312 3.425 3.25 3.425c.612 0 1.225-.238 1.613-.55.175.762.45 1.35 1.675 1.912.963.45 1.713.525 2.05.538V17z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+   <script src="index.js"></script> 
+</body>
+</html>
